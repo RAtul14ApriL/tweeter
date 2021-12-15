@@ -8,6 +8,8 @@ nav {
   align-content: center;
   color: white;
   box-shadow: 2px 2px 5px darkslategray;
+  position: inherit;
+  z-index: 2;
 }
 
 .logo {
@@ -23,7 +25,17 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-
+/* ++++++++ double down arrow +++++++++++++ */
 .fas {
   color: red;
+  cursor: pointer;
+}
+
+.fas:hover {
+  animation: a9 .5s infinite linear;
+}
+
+@keyframes a9 {
+  0%   {transform: translateY(0px)}
+  100% {transform: translateY( 30px)}
 }

@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- Fonts Used -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="styles/reset.css"/>
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css"/>
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
-    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+  <!-- Fonts Used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- App CSS -->
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    
-  </head>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span class="logo">tweeter</span>
-      <span class="create-new-post">
-        <p><strong>Write</strong> a new tweet</p>
-        <i class="fas fa-angle-double-down"></i>
-      </span>
-    </nav>
-    <header>
-      <div>
-        <img class="avatar" src="./images/profile-hex.png">
-      </div>
-      <br>
-      <div>
-        <h2><strong>Neelormi</strong> Anondi</h2>
-      </div>
-    </header>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <form class="create-tweeter-post">
-        <input id="tweeter-post" type="text" placeholder="What are you humming about?" />
-        <hr>
-        <section class="tweet-btn-counter">
-          <input type="button" class="tweeter-btn" value="tweet"/>
-          <h3 id="character-count" aria-placeholder="140">140</h3>
-        </section>
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="logo">tweeter</span>
+    <span class="create-new-post">
+      <p><strong>Write</strong> a new tweet</p>
+      <i class="fas fa-angle-double-down"></i>
+    </span>
+  </nav>
+  <header>
+    <div>
+      <img class="avatar" src="./images/profile-hex.png">
+    </div>
+    <br>
+    <div>
+      <h2><strong>Neelormi</strong> Anondi</h2>
+    </div>
+  </header>
+
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <div class="new-tweet">
+      <h2 class="tweet-subtitle">Create a new tweet</h2>
+      <form method="POST" action="localhost:8080/tweets">
+        <div class="create-tweeter-post">
+          <label class="tweet-label" for="tweet-text"><i class="fas fa-angle-double-down"></i> What are you humming about?</i></label>
+          <textarea id="tweet-text" name="text"></textarea>
+          <hr>
+        </div>
+        <div class="tweet-btn-counter">
+          <button type="submit" class="tweeter-btn">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
       </form>
-    </main>
-  </body>
+    </div>
+  </main>
+  <footer>
+    Created by &nbsp<a href="https://github.com/RAtul14ApriL" target="_blank">Ratul Hefzul Bari</a>, Lighthouse Labs November 2021 Cohort.
+  </footer>
+</body>
+
 </html>
