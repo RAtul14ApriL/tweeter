@@ -1,0 +1,57 @@
+/*++++ OLD TWEET DIV ++++*/
+.old-tweet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 30px;
+  padding: 20px;
+  border: 4px solid rgb(51, 51, 51);
+}
+.old-tweet:hover {
+  box-shadow: 3px 3px 3px grey;
+}
+/*++++ PROFILE SECTION ++++*/
+.profile-identifier {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.avatar-fullname {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.avatar-fullname img {
+  margin-right: 10px;
+}
+/*++++ PREVIOUS TWEETS ++++*/
+.prev-tweets {
+  margin: 0px 0px 5px 0px;
+  background-color: rgba(250, 250, 250, .25);
+  border: none;
+  min-height: 85px;
+}
+.prev-tweets h2 {
+  font-weight: 600;
+}
+/*++++ TIMER ++++*/
+.time-till-tweet p {
+  font-weight: 600;
+}
+/*++++ REACT ICONS ++++*/
+.react-icons .fas {
+  color:rgb(51, 51, 51);
+  margin: 0px 5px 0px 5px;
+}
+.react-icons .fas:hover {
+  color:rgb(255, 94, 1);
+  animation: none;
+}
+/*++++ END OF OLD TWEET DIV ++++*/

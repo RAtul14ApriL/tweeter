@@ -1,3 +1,4 @@
+/*++++ NEW TWEET DIV ++++*/
 .new-tweet {
   width: 100%;
   display: flex;
@@ -5,30 +6,18 @@
   justify-content: space-between;
   align-items: stretch;
 }
-
-.create-tweeter-post {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  top: 20px;
+.tweet-subtitle {
+  margin-bottom: 10px;
 }
-
+/*++++ ALERT MESSAGES ++++*/
 .title-alert {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.tweet-subtitle {
-  margin-bottom: 10px;
-
-}
-
 .title-alert h5 {
   font-weight: 900;
 }
-
 .alert-text .empty-tweet-alert {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -36,8 +25,7 @@
   align-self: flex-end;
   margin-bottom: 10px;
 }
-
-.tweet-label {
+/* .tweet-label {
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -48,28 +36,46 @@
 @keyframes a9 {
   0%   {transform: translateY(0px)}
   100% {transform: translateY( 15px)}
-}
+} */
 
+.create-tweeter-post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+/*++++ THE INPUT TEXT AREA ++++*/
 #tweet-text {
+  min-height: 85px;
   margin: 0px 0px 5px 0px;
   background-color: rgba(250, 250, 250, .25);
   border: none;
   font-size: 24px;
   font-weight: 600;
 }
-
+#tweet-text:hover {
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px grey;
+  outline: transparent;
+  background-color: white;
+}
 #tweet-text:focus {
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 3px 3px 3px grey;
   outline: transparent;
   background-color: white;
 }
-
+/*++++ BUTTON-COUNTER DIV ++++*/
 .tweet-btn-counter {
   display: flex;
   justify-content: space-between;
 }
-
+/*++++ THE COUNTER ++++*/
+.counter {
+  font-family: 'Bungee', cursive;
+  font-weight: 600;
+}
+/*++++ THE BUTTON ++++*/
 .tweeter-btn {
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
@@ -81,19 +87,13 @@
   cursor: pointer;
   transition-duration: 0.4s;
 }
-
 .tweeter-btn:hover {
   background-color: rgb(23, 151, 255);
   color: #4056A1
 }
-
 .tweeter-btn:active {
   background-color: rgb(23, 151, 255);
   color: #4056A1;
   box-shadow: 0px 0px 0px transparent;
 }
-
-.counter {
-  font-family: 'Bungee', cursive;
-  font-weight: 600;
-}
+/*++++ END OF NEW TWEET DIV ++++*/

@@ -23,12 +23,13 @@
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="./styles/header.css" type="text/css" />
   <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/old-tweet.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
   <script type="text/javascript" src="./scripts/client.js"></script>
   <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 
@@ -55,11 +56,13 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+    
+    <!-- Start of New Tweet here -->
     <div class="new-tweet">
       <section class="title-alert">
         <h2 class="tweet-subtitle">Create a new tweet</h2>
         <h5 class="alert-text"></h5>
-      </section>      
+      </section>
       <form method="POST" action="localhost:8080/tweets">
         <div class="create-tweeter-post">
           <textarea id="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
@@ -71,9 +74,31 @@
         </div>
       </form>
     </div>
+
+    <!-- Start of Old Tweet here -->
+    <article class="old-tweet">
+      <section class="profile-identifier">
+        <h2 class="avatar-fullname"><img src="https://i.imgur.com/73hZDYK.png"> King Agamemnon</h2>
+        <h3 class="profile-name">@Agamemnon</h3>
+      </section>
+      <section>
+        <div class="create-tweeter-post">
+          <div class="prev-tweets"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat at sem nec tincidunt. Pellentesque ornare, augue blandit ...</h2></div>
+          <hr>
+        </div>
+        <div class="tweet-btn-counter">
+          <span class="time-till-tweet"><p>10 days ago</p></span>
+          <span class="react-icons"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i
+              class="fas fa-heart"></i></span>
+        </div>
+      </section>
+    </article>
   </main>
+
+  <!-- Footer here -->
   <footer>
-    Created by &nbsp<a href="https://github.com/RAtul14ApriL" target="_blank">Ratul Hefzul Bari</a>, Lighthouse Labs November 2021 Cohort.
+    Created by &nbsp<a href="https://github.com/RAtul14ApriL" target="_blank">Ratul Hefzul Bari</a>, Lighthouse Labs
+    November 2021 Cohort.
   </footer>
 </body>
 
