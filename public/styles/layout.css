@@ -81,7 +81,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: auto;
+  margin-top: 50px;
   padding: 30px 20px 20px 20px;
   background-color: #f4f1ec;
 }
@@ -96,6 +96,7 @@ footer {
   color: white;
   font-size: 16px;
   padding: 10px;
+  margin-top: 49px;
 }
 
 footer a {

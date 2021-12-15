@@ -28,7 +28,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="./scripts/client.js"></script>
+  <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 
 </head>
 
@@ -54,11 +56,13 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <div class="new-tweet">
-      <h2 class="tweet-subtitle">Create a new tweet</h2>
+      <section class="title-alert">
+        <h2 class="tweet-subtitle">Create a new tweet</h2>
+        <h5 class="alert-text"></h5>
+      </section>      
       <form method="POST" action="localhost:8080/tweets">
         <div class="create-tweeter-post">
-          <label class="tweet-label" for="tweet-text"><i class="fas fa-angle-double-down"></i> What are you humming about?</i></label>
-          <textarea id="tweet-text" name="text"></textarea>
+          <textarea id="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
           <hr>
         </div>
         <div class="tweet-btn-counter">
