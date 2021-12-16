@@ -1,5 +1,12 @@
 /*++++ OLD TWEET DIV ++++*/
-.old-tweet {
+#old-tweet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.previous-tweets {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,8 +16,8 @@
   padding: 20px;
   border: 4px solid rgb(51, 51, 51);
 }
-.old-tweet:hover {
-  box-shadow: 3px 3px 3px grey;
+.previous-tweets:hover {
+  box-shadow: 5px 5px 5px grey;
 }
 /*++++ PROFILE SECTION ++++*/
 .profile-identifier {
@@ -26,10 +33,25 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  font-weight: 600;
 }
-.avatar-fullname img {
+.avatar {
   margin-right: 10px;
+  cursor: pointer;
+}
+.avatar:hover {
+  transform: translateX(2px);
+  transform: translateY(-2px);
+}
+.name {
+  font-weight: 600;
+  cursor: pointer;
+}
+.name:hover {
+  color:rgb(255, 94, 1);
+}
+.profile-name:hover {
+  color:rgb(255, 94, 1);
+  cursor: pointer;
 }
 /*++++ PREVIOUS TWEETS ++++*/
 .prev-tweets {
