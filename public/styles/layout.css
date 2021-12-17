@@ -82,7 +82,7 @@ main {
 }
 
 #to-top-btn:hover {
-  background-color: #555;
+  background-color:orange;
 }
 /*++++++++++ END OF MAIN CONTAINER ++++++++++++++++*/
 
@@ -228,6 +228,27 @@ main {
   }
 }
 @media only screen and (max-width: 420px) and (min-width: 320px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: .9em;
+  }
+  h5 {
+    font-size: .8em;
+  }
+  h6 {
+    font-size: 0.75;
+  }
+  p {
+    font-size: 0.65em;
+  }
   .header-main {
   display: flex;
   flex-direction: column;
@@ -242,5 +263,13 @@ main {
   .footer {
     font-size: .55em;
     padding: 1em 4em;
+  }
+  #to-top-btn {
+    bottom: .5em;
+    right: .5em;
+    z-index: 99;
+    font-size: .5em;
+    padding: .5em;
+    border-radius: .125em;
   }
 }
