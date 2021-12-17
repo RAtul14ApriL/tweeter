@@ -20,7 +20,8 @@ This repository is the starter code for the project: Students will fork and clon
 ## Features
 1. Create Tweet;
 2. View previous tweets in the timeline in chronological order;
-3. Responsive design.
+3. Responsive design;
+4. Interactive features.
 
 ## How to use the app
 Q. How to create a tweet?
@@ -31,3 +32,9 @@ A. The tweet must be between 1 and 140 characters long. Any tweet above 140 char
 
 Q. Is the app has device compatibility?
 A. The App is designed responsively. So can be used smoothly in any device with a minimum screen width of 320px.
+
+## Screenshots
+1. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(more%20than%201024).JPG
+2. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(420-768).JPG
+3. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/screen(320-420).JPG
+4. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Posted%20tweets.JPG
