@@ -34,12 +34,12 @@ Q. Is the app has device compatibility?
 A. The App is designed responsively. So can be used smoothly in any device with a minimum screen width of 320px.
 
 ## Screenshots
-1. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(more%20than%201024).JPG
-2. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(420-768).JPG
-3. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/screen(320-420).JPG
-4. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Posted%20tweets.JPG
-5. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/scroll-to-top.gif
-6. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/show-hide-tweet.gif
+1. [!Screenshot: screen width above 1024px] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(more%20than%201024).JPG
+2. [!Screenshot: screen width 420px to 768px] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(420-768).JPG
+3. [!Screenshot: screen width 320px to 420px] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/screen(320-420).JPG
+4. [!Screenshot: Timeline with posted tweets] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Posted%20tweets.JPG
+5. [!GIF animation: scrol to top button] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/scroll-to-top.gif
+6. [!GIF animation: creating a tweet] https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/show-hide-tweet.gif
 
 ## Contact
 For any further query, please contact https://github.com/RAtul14ApriL
