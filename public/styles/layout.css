@@ -37,8 +37,120 @@ strong {
 h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
 }
+hr {
+  top: 0.313em;
+  border: none;
+  width: 100%;
+  height: 0.125em;
+  background: rgb(51, 51, 51);
+  margin-bottom: 0.313em;
+}
+ /* +++++++++++++ HEADER-MAIN DIV FOR RESPONSIVENESS ++++++++++++ */
+.header-main {
+  margin-top: 4.5em;
+}
+/*++++++++++ MAIN CONTAINER ++++++++++++++++*/
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 1.250em 1.250em 1.250em;
+  background-color: #f4f1ec;
+}
+.btn-div {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+#to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 1.25em;
+  right: 1em;
+  z-index: 99;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  background-color:rgb(12, 61, 141);
+  box-shadow: .125em .125em .125em rgb(12, 61, 141);
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: .25em;
+}
 
-@media only screen and (max-width: 1000px) {
+#to-top-btn:hover {
+  background-color: #555;
+}
+/*++++++++++ END OF MAIN CONTAINER ++++++++++++++++*/
+
+/*++++++++++ FOOTER ++++++++++++++++*/
+.footer-div {
+  width: 100vw;
+  display:flex;
+  align-items: flex-end;
+}
+.footer {
+  width: 100%;
+  background-color: #4056A1;
+  text-align: center;
+  color: white;
+  font-size: .8em;
+  padding: 1em;
+  margin-top: 1em;
+}
+.footer a {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+}
+/*++++++++++ END OF FOOTER ++++++++++++++++*/
+@media only screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.75em;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-size: .8em;
+  }
+  .header-main {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1em;
+  }
+  main {
+    width: 60%;
+    padding-top: 0em;
+  }
+  .footer {
+    margin-bottom: 0;
+  }
+  .footer-div {
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
 
 h1 {
   font-size: 2.125em;
@@ -61,51 +173,74 @@ h6 {
 p {
   font-size: 0.750em;
 }
-hr {
-  top: 0.313em;
-  border: none;
-  width: 100%;
-  height: 0.125em;
-  background: rgb(51, 51, 51);
-  margin-bottom: 0.313em;
-}
-/* +++++++++++++ END OF COMMON SELECTORS ++++++++++++ */
-/* +++++++++++++ HEADER-MAIN DIV FOR RESPONSIVENESS ++++++++++++ */
 .header-main {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3.5em;
 }
-/*++++++++++ MAIN CONTAINER ++++++++++++++++*/
 main {
   width: 90%;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: .9em;
+  }
+  h5 {
+    font-size: .8em;
+  }
+  h6 {
+    font-size: 0.75;
+  }
+  p {
+    font-size: 0.65em;
+  }
+  .header-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.75em;
+  }
+  main {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0em;
+    background-color: #f4f1ec;
+  }
+  .footer-div {
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  .header-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0em 1.250em 1.250em 1.250em;
-  background-color: #f4f1ec;
-  /* position: absolute; */
-}
-/*++++++++++ END OF MAIN CONTAINER ++++++++++++++++*/
-/*++++++++++ FOOTER ++++++++++++++++*/
-.footer {
-  /* position: inherit; */
-  width: 100%;
-  /* height: 100px; */
-  background-color: #4056A1;
-  /* display: flex;
-  justify-content: center; */
- text-align: center;
-  color: white;
-  font-size: 16px;
-  padding: 10px;
-}
-.footer a {
-  color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-decoration: none;
-}
-/*++++++++++ END OF FOOTER ++++++++++++++++*/
+  }
+  main {
+    padding: 0em;
+  }
+  p {
+    font-size: 0.55em;
+  }
+  .footer {
+    font-size: .55em;
+    padding: 1em 4em;
+  }
 }

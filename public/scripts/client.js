@@ -41,7 +41,7 @@ const renderTweets = (tweetData) => {
   $("#old-tweet").empty();
   for (let i = tweetData.length - 1; i >= 0; i-- ) {
     const tweetText = createTweetElement(tweetData[i]);
-    $("#old-tweet").append(tweetText);
+    $("#old-tweet").prepend(tweetText);
   }
 };
 
@@ -58,25 +58,20 @@ $(document).ready(() => {
       return $alert.html(`× Oops! Tweets cannot be empty ×`);
     } else {
       const serializedText = $("#tweet-form").serialize();
-      $.post('/tweets', serializedText, (response) => {
-        $.ajax({
-          url: "/tweets/",
-          method: "POST",
-          data: serializedText,
-        })
-        .then(() => {
+      $.post('/tweets', serializedText, (response) => {   
           loadTweets();
           $('.new-tweet').hide();
           $("#tweet-text").val("");
           $("output").text();
-        });
       });
     };
   });
   $('.new-tweet').hide();
   $("#show-hide").on('click', () => {
-      $('.new-tweet').toggle('slow');
-      $("#tweet-form").focus();     
+      $('.new-tweet').toggle('slow', () => {
+        $("#tweet-text").focus();
+      });
+          
   })  
 });
 const loadTweets = () => {
@@ -88,3 +83,15 @@ const loadTweets = () => {
     },
   });
 };
+//Scroll-to-top button
+$(window).scroll(() => {
+  if ($(this).scrollTop()) {
+      $('#to-top-btn').fadeIn();
+  } else {
+      $('#to-top-btn').fadeOut();
+  }
+});
+
+$("#to-top-btn").click(() => {
+  $(this).animate({scrollTop: 0}, 1000);
+});

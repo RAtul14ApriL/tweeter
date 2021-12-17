@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  margin-bottom: 1em;
 }
 .tweet-subtitle {
   margin-bottom: 0.625em;
@@ -16,17 +17,13 @@
   align-items: center;
 }
 .alert {
-  height: 2em;
-  background-color: rgb(212, 24, 24);
-  border-radius: 0.313em;
-  display: flex;
-  align-items: center;
-  /* margin-bottom: 1.875em; */
+  text-align: center;
 }
 .alert-text {
   font-family: 'Bungee', cursive;
   font-weight: 400;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
+  background-color: rgb(212, 24, 24);
 }
 .create-tweeter-post {
   width: 100%;
@@ -69,7 +66,7 @@
 .tweeter-btn {
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
   border: none;
   padding: 0.313em;
@@ -85,5 +82,19 @@
   background-color: rgb(23, 151, 255);
   color: #4056A1;
   box-shadow: 0em 0em 0em transparent;
+}
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  .alert-text {
+    font-size: 1em;
+  }
+  .tweeter-btn {
+  font-size: .65em;
+  padding: 0.125em;
+  box-shadow: 0.09em 0.09em 0.09em grey;
+  height: 2em;
+}
+.counter {
+  font-size: .75em;
+}
 }
 /*++++ END OF NEW TWEET DIV ++++*/

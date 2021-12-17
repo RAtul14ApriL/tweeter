@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 1.5em;
 }
 .previous-tweets {
   width: 100%;
@@ -12,7 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  margin-top: 0.625em;
+  margin-bottom: 0.625em;
   padding: 0.625em;
   border: 0.125em solid rgb(51, 51, 51);
 }
@@ -56,10 +55,10 @@
 }
 /*++++ PREVIOUS TWEETS ++++*/
 .prev-tweets {
-  margin: 0px 0px 0.313em 0px;
+  margin: 0em 0em 0.313em 0em;
   background-color: rgba(250, 250, 250, .25);
   border: none;
-  min-height: 1.75em;
+  min-height: fit-content;
 }
 .prev-tweets h2 {
   font-weight: 600;
@@ -72,7 +71,8 @@
 /*++++ REACT ICONS ++++*/
 .react-icons .fas {
   color:rgb(51, 51, 51);
-  margin: 0px 0.313em 0px 0.313em;
+  vertical-align: top;
+  margin: 0em 0.313em 0em 0.313em;
 }
 .react-icons .fas:hover {
   color:rgb(255, 94, 1);
@@ -82,6 +82,40 @@
   color:rgb(255, 94, 1);
   animation: none;
 }
-
-
 /*++++ END OF OLD TWEET DIV ++++*/
+
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+  .avatar {
+    margin-right: 0.25em;
+    cursor: pointer;
+    width: 1em;
+  }
+  .avatar:hover {
+    transform: translateX(0.025em);
+    transform: translateY(-0.025em);
+  }
+  .previous-tweets {
+    margin-bottom: 0.5em;
+  }
+
+}
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  .avatar {
+    margin-right: 0.25em;
+    cursor: pointer;
+    width: .75em;
+  }
+  .avatar:hover {
+    transform: translateX(0.025em);
+    transform: translateY(-0.025em);
+  }
+  .previous-tweets {
+    margin-bottom: 0.35em;
+  }
+  .react-icons .fas {
+    margin: 0em .5em;
+  }
+  .tweet-btn-counter {
+    max-height: .75em;
+  }
+}

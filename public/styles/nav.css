@@ -1,5 +1,3 @@
-@media only screen and (max-width: 1000px) {
-
 /* ++++++++ NAVBAR +++++++++++++ */
 nav {
   width: 100%;
@@ -37,7 +35,6 @@ a:hover {
   cursor: pointer;
 }
 .fas {
-  /* color: red; */
   cursor: pointer;
 }
 .fas:hover {
@@ -47,58 +44,71 @@ a:hover {
   0%   {transform: translateY(0em)}
   100% {transform: translateY(0.625em)}
 }
-/* ++++++++ END OF NAVBAR +++++++++++++ */
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color:rgb(12, 61, 141);
+    box-shadow: .125em .125em .125em grey;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+nav {
+  background-color:orange;
+}
 }
 
-@media only screen and (min-width: 1000px) {
-
-  /* ++++++++ NAVBAR +++++++++++++ */
+@media only screen and (max-width: 768px) and (min-width: 420px) {
   nav {
-    width: 100%;
-    height: 4.5em;
     background-color:orange;
-    background-image: url("../images/binding-dark.png");
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    /* box-shadow: 2px 2px 5px darkslategray; */
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    z-index: 2;
+    height: 2.75em;
+    padding: .65em .65em 0 .65em;
   }
   .logo a {
     font-family: 'Bungee', cursive;
-    font-size: 2em;
+    font-size: 1.25em;
     color: white;
     text-decoration: none;
   }
-  a:hover {
-    color: rgb(233, 231, 231);
-  }
-  .create-new-post {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  /* ++++++++ DOUBLE ARROW DOWN ICON +++++++++++++ */
-  #show-hide {
-    cursor: pointer;
-  }
   .fas {
-    /* color: red; */
-    cursor: pointer;
+    font-size: .75em;
   }
   .fas:hover {
     animation: a9 .75s infinite linear;
   }
   @keyframes a9 {
     0%   {transform: translateY(0em)}
-    100% {transform: translateY(0.625em)}
+    100% {transform: translateY(0.25em)}
   }
+}
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:orange;
+    height: 5em;
+    padding: .65em .65em 0 .65em;
+  }
+  .logo a {
+    font-size: 1em;
+    margin-bottom: .5em;
+  }
+  .create-new-post {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fas {
+    font-size: .5em;
+  }
+  .fas:hover {
+    animation: a9 .75s infinite linear;
+  }
+  @keyframes a9 {
+    0%   {transform: translateY(0em)}
+    100% {transform: translateY(0.25em)}
+  }
+}
   /* ++++++++ END OF NAVBAR +++++++++++++ */
-  }
