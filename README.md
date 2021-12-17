@@ -38,3 +38,8 @@ A. The App is designed responsively. So can be used smoothly in any device with 
 2. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Screen(420-768).JPG
 3. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/screen(320-420).JPG
 4. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/Posted%20tweets.JPG
+5. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/scroll-to-top.gif
+6. https://github.com/RAtul14ApriL/tweeter/blob/master/screenshots/show-hide-tweet.gif
+
+## Contact
+For any further query, please contact https://github.com/RAtul14ApriL
