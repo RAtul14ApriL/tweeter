@@ -4,6 +4,9 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -38,46 +41,49 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="logo">tweeter</span>
-    <span class="create-new-post">
-      <p><strong>Write</strong> a new tweet</p>
+    <span class="logo"><a href="/">tweeter</a></span>
+    <span id="show-hide" class="create-new-post">
+      <h3><strong>Write</strong> a new tweet</h3>
       <i class="fas fa-angle-double-down"></i>
     </span>
   </nav>
-  <header>
-    <div>
-      <img class="avatar" src="./images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2><strong>Neelormi</strong> Anondi</h2>
-    </div>
-  </header>
+  <div class="header-main">
+    <header>
+      <div>
+        <img class="profile-pic" src="./images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h2><strong>Neelormi</strong> Anondi</h2>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    
-    <!-- Start of New Tweet here -->
-    <div class="new-tweet">
-      <section class="title-alert">
-        <h2 class="tweet-subtitle">Create a new tweet</h2>
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <div class="alert">
         <h5 class="alert-text"></h5>
-      </section>
-      <form id="tweet-form" method="POST" action="/tweets">
-        <div class="create-tweeter-post">
-          <textarea id="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
-          <hr>
-        </div>
-        <div class="tweet-btn-counter">
-          <button type="submit" class="tweeter-btn">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </div>
+      </div>
+      <!-- Start of New Tweet here -->
+      <div class="new-tweet">
+        <section class="title-alert">
+          <h4 class="tweet-subtitle">Create a new tweet</h4>
+        </section>
+        <form id="tweet-form" method="POST" action="/tweets">
+          <div class="create-tweeter-post">
+            <textarea id="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
+            <hr>
+          </div>
+          <div class="tweet-btn-counter">
+            <button type="submit" class="tweeter-btn">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </div>
 
-    <!-- Start of Old Tweet here -->
-    <article id="old-tweet"></article>
-  </main>
+      <!-- Start of Old Tweet here -->
+      <article id="old-tweet"></article>
+    </main>
+  </div>
 
   <!-- Footer here -->
   <footer class="footer">

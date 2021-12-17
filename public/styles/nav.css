@@ -1,24 +1,29 @@
+@media only screen and (max-width: 1000px) {
+
 /* ++++++++ NAVBAR +++++++++++++ */
 nav {
   width: 100%;
-  height: 120px;
+  height: 4.5em;
   background-color:orange;
   background-image: url("../images/binding-dark.png");
-  padding: 1.5em;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: flex-start;
   color: white;
-  /* box-shadow: 2px 2px 5px darkslategray; */
   position: fixed;
   overflow: hidden;
   top: 0;
   z-index: 2;
 }
-.logo {
+.logo a {
   font-family: 'Bungee', cursive;
-  font-size: 42px;
+  font-size: 2em;
   color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(233, 231, 231);
 }
 .create-new-post {
   height: 100%;
@@ -28,15 +33,72 @@ nav {
   align-items: center;
 }
 /* ++++++++ DOUBLE ARROW DOWN ICON +++++++++++++ */
+#show-hide {
+  cursor: pointer;
+}
 .fas {
   /* color: red; */
   cursor: pointer;
 }
 .fas:hover {
-  animation: a9 .5s infinite linear;
+  animation: a9 .75s infinite linear;
 }
 @keyframes a9 {
-  0%   {transform: translateY(0px)}
-  100% {transform: translateY( 20px)}
+  0%   {transform: translateY(0em)}
+  100% {transform: translateY(0.625em)}
 }
 /* ++++++++ END OF NAVBAR +++++++++++++ */
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /* ++++++++ NAVBAR +++++++++++++ */
+  nav {
+    width: 100%;
+    height: 4.5em;
+    background-color:orange;
+    background-image: url("../images/binding-dark.png");
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* box-shadow: 2px 2px 5px darkslategray; */
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+  }
+  .logo a {
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(233, 231, 231);
+  }
+  .create-new-post {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* ++++++++ DOUBLE ARROW DOWN ICON +++++++++++++ */
+  #show-hide {
+    cursor: pointer;
+  }
+  .fas {
+    /* color: red; */
+    cursor: pointer;
+  }
+  .fas:hover {
+    animation: a9 .75s infinite linear;
+  }
+  @keyframes a9 {
+    0%   {transform: translateY(0em)}
+    100% {transform: translateY(0.625em)}
+  }
+  /* ++++++++ END OF NAVBAR +++++++++++++ */
+  }

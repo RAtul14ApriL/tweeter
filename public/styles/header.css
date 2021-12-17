@@ -1,7 +1,9 @@
 /*++++ HEADER ++++*/
+@media only screen and (max-width: 1000px) {
+
 header {
   width: 100%;
-  height: 400px;
+  height: 12em;
   background-color: orange;
   background-image: url("../images/binding-dark.png");
   display: flex;
@@ -9,6 +11,32 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 120px;
+  margin-top: 4.5em;
   /* position: relative; */
 }
+.profile-pic {
+  width: 8em;
+  height: auto;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+
+  header {
+    width: 100%;
+    height: 12em;
+    background-color: orange;
+    background-image: url("../images/binding-dark.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 4.5em;
+    /* position: relative; */
+  }
+  .profile-pic {
+    width: 8em;
+    height: auto;
+  }
+  }
