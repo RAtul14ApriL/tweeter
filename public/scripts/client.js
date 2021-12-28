@@ -1,3 +1,6 @@
+$('.alert-text-over').hide();
+$('.alert-text-blank').hide();
+
 $(document).ready(() => {
   const escape = (str) => {
     let div = document.createElement("h2");
@@ -56,16 +59,27 @@ $(document).ready(() => {
     });
   };
 
+  $('.alert-text-over').hide();
+  $('.alert-text-blank').hide();
   loadTweets();
 
   $("#tweet-form").submit((event) => {
     event.preventDefault();
     const tweetPost = document.forms[0][0].value;
-    const $alert = $('.alert-text');
+    const $alertOver = $('.alert-text-over')
+    const $alertBlank = $('.alert-text-blank');
     if (tweetPost.length > 140) {
-      return $alert.html(`× Oops! Tweets cannot be more than 140 characters ×`);
-    } else if (tweetPost.length === 0 || tweetPost === null) {
-      return $alert.html(`× Oops! Tweets cannot be empty ×`);
+      $alertOver.show();
+      setTimeout(() => {
+        $alertOver.fadeOut('fast');
+      }, 2000);
+      return;
+    } else if (!tweetPost) {
+      $alertBlank.show();
+      setTimeout(() => {
+        $alertBlank.fadeOut('fast');
+      }, 2000);
+      return;
     } else {
       const serializedText = $("#tweet-form").serialize();
       $.post('/tweets', serializedText, (response) => {
@@ -81,7 +95,6 @@ $(document).ready(() => {
     $('.new-tweet').toggle('slow', () => {
       $("#tweet-text").focus();
     });
-
   })
 
   //Scroll-to-top button
@@ -94,7 +107,6 @@ $(document).ready(() => {
   });
 
   $("#to-top-btn").on('click', () => {
-    console.log('Clicked');
     $(window).scrollTop(0);
   });
 });

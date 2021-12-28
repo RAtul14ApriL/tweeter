@@ -19,11 +19,17 @@
 .alert {
   text-align: center;
 }
-.alert-text {
+.alert-text-over {
   font-family: 'Bungee', cursive;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  background-color: rgb(212, 24, 24);
+  background-color: orange;
+}
+.alert-text-blank {
+  font-family: 'Bungee', cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: orange;
 }
 .create-tweeter-post {
   width: 100%;
